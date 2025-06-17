@@ -7,7 +7,7 @@ let page: Page; //Represents a single web page within a context
 
 const url = "https://www.webdriveruniversity.com/";
 
-Given('I navigate to the webdriveruniversity homepage', async () => {
+Given('homepage', async () => {
     //Setup browser instance:
     browser = await chromium.launch({ headless: false });
     context = await browser.newContext({ viewport: { width: 1920, height: 1080 }});
