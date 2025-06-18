@@ -1,6 +1,6 @@
 Feature: WebdriverUniversity.com - Contact Us Page
     Scenario: Valid Contact Us Form Submission
-        Given homepage
+        Given I navigated to homepage
         When I click on the contact us button
         And I switch to the new browser tab
         And I type a first name
