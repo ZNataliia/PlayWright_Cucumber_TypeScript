@@ -11,6 +11,7 @@
   "description": "",
   "devDependencies": {
     "@cucumber/cucumber": "^10.8.0",
+    "@faker-js/faker": "^9.8.0",
     "@playwright/test": "^1.45.3",
     "@types/node": "^22.1.0",
     "ts-node": "^10.9.2"

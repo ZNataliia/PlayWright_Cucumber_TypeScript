@@ -1,6 +1,7 @@
 import { Given, When, Then } from "@cucumber/cucumber";
 import { pageFixture } from "./hooks/browserContextFixture";
 import { expect } from "@playwright/test";
+import{faker} from '@faker-js/faker';
 
 
 
@@ -60,3 +61,49 @@ Then('I should be presented with an error contact us message', async () => {
     expect(messageText).toMatch(/Error: (all fields are required|invalid email address)/);
 });
 
+//cucumber expressions
+
+
+When('I type a specific first name {string}', async (firstName: string) =>{
+    const firstName_Input = pageFixture.page.getByRole('textbox', { name: 'First Name' })
+    await firstName_Input.fill(firstName);
+});
+
+
+When('I type a specific last name {string}', async (LastName: string) =>{
+    const lastName_Input = await pageFixture.page.getByRole('textbox', { name: 'Last Name' })
+    await lastName_Input.fill(LastName);
+});
+
+When('I enter a specific email address {string}', async (email: string) =>{
+    const email_Input = await pageFixture.page.getByRole('textbox', { name: 'email' })
+    await email_Input.fill(email);
+});
+
+When('I type a specific comment {string} and a number {int} withing the comment input field', async (comment: string, commentNumber: number) =>{
+    const comment_Input = await pageFixture.page.getByRole('textbox', { name: 'comment' })
+    await comment_Input.fill(comment+ ' ' + commentNumber);
+});
+
+//random data
+
+When('I type a random first name', async () =>{
+    const firstName_Input = pageFixture.page.getByRole('textbox', { name: 'First Name' })
+    await firstName_Input.fill(faker.person.firstName());
+});
+
+
+When('I type a random last name', async () =>{
+    const lastName_Input = await pageFixture.page.getByRole('textbox', { name: 'Last Name' })
+    await lastName_Input.fill(faker.person.lastName());
+});
+
+When('I enter a random email address', async () =>{
+    const email_Input = await pageFixture.page.getByRole('textbox', { name: 'email' })
+    await email_Input.fill(faker.internet.email());
+});
+
+When('I type a random comment', async () =>{
+    const comment_Input = await pageFixture.page.getByRole('textbox', { name: 'comment' })
+    await comment_Input.fill(faker.lorem.sentence());
+});
