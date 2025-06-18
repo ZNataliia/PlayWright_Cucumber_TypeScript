@@ -5,7 +5,7 @@ import { chromium, Browser, Page } from "playwright"
 
 const url = "https://www.webdriveruniversity.com/";
 
-Given('I navigated to homepage', async () => {
+Given('I navigate to the webdriveruniversity homepage', async () => {
     //Access URL
     await pageFixture.page.goto(url, { timeout: 60000 });
 });

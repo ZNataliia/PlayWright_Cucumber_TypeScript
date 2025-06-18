@@ -1,7 +1,7 @@
 import { Given, When, Then } from "@cucumber/cucumber";
 import { pageFixture } from "./hooks/browserContextFixture";
 import { expect } from "@playwright/test";
-import{faker} from '@faker-js/faker';
+import { faker } from '@faker-js/faker';
 
 
 
@@ -53,7 +53,7 @@ Then('I should be presented with a successful contact us submission message', as
     expect(messageText).toBe("Thank You for your Message!");
 });
 
-Then('I should be presented with an error contact us message', async () => {
+Then('I should be presented with a unsuccessful contact us message', async () => {
     // Write code here that turns the phrase above into concrete actions
     const errorMessage = pageFixture.page.locator("body");
     const messageText = await errorMessage.textContent();
@@ -64,46 +64,87 @@ Then('I should be presented with an error contact us message', async () => {
 //cucumber expressions
 
 
-When('I type a specific first name {string}', async (firstName: string) =>{
+When('I type a specific first name {string}', async (firstName: string) => {
     const firstName_Input = pageFixture.page.getByRole('textbox', { name: 'First Name' })
     await firstName_Input.fill(firstName);
 });
 
 
-When('I type a specific last name {string}', async (LastName: string) =>{
+When('I type a specific last name {string}', async (LastName: string) => {
     const lastName_Input = await pageFixture.page.getByRole('textbox', { name: 'Last Name' })
     await lastName_Input.fill(LastName);
 });
 
-When('I enter a specific email address {string}', async (email: string) =>{
+When('I enter a specific email address {string}', async (email: string) => {
     const email_Input = await pageFixture.page.getByRole('textbox', { name: 'email' })
     await email_Input.fill(email);
 });
 
-When('I type a specific comment {string} and a number {int} withing the comment input field', async (comment: string, commentNumber: number) =>{
+When('I type a specific comment {string} and a number {int} withing the comment input field', async (comment: string, commentNumber: number) => {
     const comment_Input = await pageFixture.page.getByRole('textbox', { name: 'comment' })
-    await comment_Input.fill(comment+ ' ' + commentNumber);
+    await comment_Input.fill(comment + ' ' + commentNumber);
 });
 
 //random data
 
-When('I type a random first name', async () =>{
+When('I type a random first name', async () => {
     const firstName_Input = pageFixture.page.getByRole('textbox', { name: 'First Name' })
     await firstName_Input.fill(faker.person.firstName());
 });
 
 
-When('I type a random last name', async () =>{
+When('I type a random last name', async () => {
     const lastName_Input = await pageFixture.page.getByRole('textbox', { name: 'Last Name' })
     await lastName_Input.fill(faker.person.lastName());
 });
 
-When('I enter a random email address', async () =>{
+When('I enter a random email address', async () => {
     const email_Input = await pageFixture.page.getByRole('textbox', { name: 'email' })
     await email_Input.fill(faker.internet.email());
 });
 
-When('I type a random comment', async () =>{
+When('I type a random comment', async () => {
     const comment_Input = await pageFixture.page.getByRole('textbox', { name: 'comment' })
     await comment_Input.fill(faker.lorem.sentence());
+});
+
+//outlines
+
+When('I type a first name {word} and a last name {word}', async (firstName: string, lastName: string) => {
+    const firstName_Input = pageFixture.page.getByRole('textbox', { name: 'First Name' })
+    await firstName_Input.fill(firstName);
+    const lastName_Input = pageFixture.page.getByRole('textbox', { name: 'Last Name' })
+    await lastName_Input.fill(lastName);
+
+});
+When('I type a email address {string} and a comment {string}', async (emailAddress: string, comment: string) => {
+    const email_Input = pageFixture.page.getByRole('textbox', { name: 'email' })
+    await email_Input.fill(emailAddress);
+    const comment_Input = pageFixture.page.getByRole('textbox', { name: 'comment' })
+    await comment_Input.fill(comment);
+});
+
+Then('I should be presented with header text {string}', async (message: string) => {
+    // Wait for the header or body to be present
+    await pageFixture.page.waitForSelector("//h1|//body", { state: "visible" });
+    // get all elements
+    const elements = await pageFixture.page.locator("//h1|//body").elementHandles();
+    //loop though all elements and check if the text content matches the expected message
+    let foundElementText = '';
+    //await pageFixture.page.pause(); // Wait for the page to load completely
+    for (const element of elements) {
+        if (!element) {
+            // Skip null elements
+            continue;
+        }
+        const text = await element.innerText();
+        if (text.includes(message)) {
+            foundElementText = text;
+            break;
+        }
+    }
+
+
+    // Assert that the message text matches the expected message
+    expect(foundElementText).toContain(message);
 });
