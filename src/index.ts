@@ -7,6 +7,7 @@ const common = `./src/features/*.feature \
   --require ./src/utils/cucumber-timeout.ts \
   -f json:./reports/report.json \
   --format html:./reports/report.html \
+  --format junit:./reports/test-results.xml \
   --tags "not @ignore"`;
 
 //Define an interface for the profiles object
