@@ -1,0 +1,45 @@
+# azure-pipelines.yml
+trigger:
+  - main # or your primary branch like 'master' or 'develop'
+
+pool:
+  vmImage: 'ubuntu-latest' # Use a Linux agent. Playwright also supports Windows and macOS agents.
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '18.x' # Specify a Node.js version suitable for your project
+  displayName: 'Install Node.js'
+
+- script: |
+    npm ci # Installs dependencies from package-lock.json
+  displayName: 'Install dependencies'
+
+- script: |
+    npx playwright install --with-deps # Installs Playwright browsers and their dependencies
+  displayName: 'Install Playwright Browsers'
+
+- script: |
+    npm test # or whatever command you use to run your Playwright Cucumber tests (e.g., 'npm run cucumber-tests')
+  displayName: 'Run Playwright Cucumber Tests'
+  # Set continueOnError to true if you want subsequent steps to run even if tests fail,
+  # but generally, for CI, you want failures to break the pipeline.
+  # continueOnError: true
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit' # Playwright can generate JUnit reports
+    testResultsFiles: '**/test-results.xml' # Adjust this path based on where Playwright generates its JUnit XML report
+    failTaskOnFailedTests: true
+    testRunTitle: 'Playwright Cucumber Test Results'
+  displayName: 'Publish Test Results'
+  condition: succeededOrFailed() # Publish results even if tests fail
+
+# Optional: Publish Playwright HTML Report (requires more setup)
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathToPublish: 'playwright-report' # Path to your Playwright HTML report directory
+    artifactName: 'PlaywrightReports'
+    publishLocation: 'Container'
+  displayName: 'Publish Playwright HTML Report'
+  condition: succeededOrFailed() # Publish report even if tests fail
