@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "cucumberWithTS": "cucumber-js src/features/*.feature --require-module ts-node/register --require src/step-definitions/**/*.ts --require src/utils/cucumber-timeout.ts"
+    "cucumberWithTS": "cucumber-js src/features/*.feature --require-module ts-node/register --require src/step-definitions/**/**/*.ts --require src/utils/cucumber-timeout.ts",
+    "cucumber": "npx cucumber-js && ts-node ./src/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -11,7 +12,7 @@
   "description": "",
   "devDependencies": {
     "@cucumber/cucumber": "^10.8.0",
-    "@faker-js/faker": "^9.8.0",
+    "@faker-js/faker": "^8.4.1",
     "@playwright/test": "^1.45.3",
     "@types/node": "^22.1.0",
     "ts-node": "^10.9.2"
