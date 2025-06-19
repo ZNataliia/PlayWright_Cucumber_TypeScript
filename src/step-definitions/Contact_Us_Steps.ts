@@ -5,21 +5,6 @@ import { faker } from '@faker-js/faker';
 
 
 
-When('I switch to the new browser tab', async () => {
-
-    await pageFixture.context.waitForEvent('page');
-    //retrieve all open pages in the browser context
-    const pages = pageFixture.context.pages();
-    //assigg the most recent page to the pageFixture
-    pageFixture.page = pages[pages.length - 1];
-    await pageFixture.page.bringToFront?.();
-
-    //ensure the page is maximized
-    await pageFixture.page.setViewportSize({ width: 1920, height: 1080 }
-
-    );
-});
-
 When('I type a first name', async () => {
     const firstName_Input = await pageFixture.page.getByRole('textbox', { name: 'First Name' })
     await firstName_Input.fill('John');
