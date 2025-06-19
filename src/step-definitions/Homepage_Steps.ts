@@ -11,7 +11,12 @@ Given('I navigate to the webdriveruniversity homepage', async () => {
 });
 
 When('I click on the contact us button', async () => {
-    //await page.pause();
+    
     const contactUs_Button = await pageFixture.page.getByRole('link', { name: 'CONTACT US Contact Us Form' });
     await contactUs_Button.click();
+});
+
+When('I click on the login portal', async () => {
+    const loginPortal_Button = await pageFixture.page.locator('#login-portal');
+    await loginPortal_Button.click();
 });

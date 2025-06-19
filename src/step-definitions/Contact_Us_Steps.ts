@@ -80,7 +80,7 @@ When('I enter a specific email address {string}', async (email: string) => {
     await email_Input.fill(email);
 });
 
-When('I type a specific comment {string} and a number {int} withing the comment input field', async (comment: string, commentNumber: number) => {
+When('I type specific text {string} and a number {int} within the comment input field', async (comment: string, commentNumber: number) => {
     const comment_Input = await pageFixture.page.getByRole('textbox', { name: 'comment' })
     await comment_Input.fill(comment + ' ' + commentNumber);
 });

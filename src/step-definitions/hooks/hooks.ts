@@ -17,7 +17,7 @@ AfterAll(async function(){
 // Before hook: Runs before each scenario
 Before(async function() {
     browser = await chromium.launch({ headless: false });
-    pageFixture.context = await browser.newContext({ viewport: { width: 1920, height: 1080 } });
+    pageFixture.context = await browser.newContext({ viewport: { width: 1680, height: 1050 } });
     pageFixture.page = await pageFixture.context.newPage();
 })
 
