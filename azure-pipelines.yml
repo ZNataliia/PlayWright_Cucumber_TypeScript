@@ -1,0 +1,51 @@
+# azure-pipelines.yml
+trigger:
+  - master # <--- IMPORTANT: Change 'main' to the name of your default branch (e.g., 'master', 'develop')
+
+pool:
+  vmImage: 'ubuntu-latest' # This is generally good. Playwright supports Linux, Windows, macOS agents.
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '20.17.0' # <--- IMPORTANT: Specify the Node.js version your project uses. Check your local environment.
+  displayName: 'Install Node.js'
+
+- script: |
+    npm ci # <--- IMPORTANT: Use 'npm ci' if you have a package-lock.json. If not, use 'npm install'.
+  displayName: 'Install dependencies'
+
+- script: |
+    npx playwright install --with-deps # Installs Playwright browsers and their dependencies
+  displayName: 'Install Playwright Browsers'
+
+- script: |
+    npm run cucumber regression # <--- IMPORTANT: This is the command that runs your tests.
+             #      Check your package.json "scripts" section.
+             #      It might be 'npm run cucumber-tests', 'npx cucumber-js', or 'npx playwright test'.
+             #      Make sure this command correctly executes your Playwright Cucumber tests.
+  displayName: 'Run Playwright Cucumber Tests'
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit' # Playwright and Cucumber can often output JUnit XML.
+    testResultsFiles: '**/reports/test-results.xml' # <--- IMPORTANT: This path MUST match where your tests generate the JUnit XML report.
+                                            #      You need to configure your Playwright/Cucumber setup to output JUnit XML.
+                                            #      For Playwright, this is typically in `playwright.config.ts`:
+                                            #      `reporter: [['junit', { outputFile: './test-results.xml' }]]`
+                                            #      For Cucumber, you might need a specific reporter or a script to convert.
+    failTaskOnFailedTests: true
+    testRunTitle: 'Playwright Cucumber Test Results'
+  displayName: 'Publish JUnit Test Results'
+  condition: succeededOrFailed() # Publish results even if tests fail
+
+# Optional: Publish Playwright HTML Report
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathToPublish: 'reports/report.html' # <--- IMPORTANT: This path MUST match where Playwright generates its HTML report.
+                                      #      Typically configured in `playwright.config.ts`:
+                                      #      `outputDir: 'playwright-report'`
+    artifactName: 'PlaywrightReports'
+    publishLocation: 'Container'
+  displayName: 'Publish Playwright HTML Report'
+  condition: succeededOrFailed()
