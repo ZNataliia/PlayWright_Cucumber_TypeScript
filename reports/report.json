@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2336888399
+              "duration": 714774899
             }
           },
           {
@@ -23,11 +23,11 @@
             "line": 4,
             "name": "I navigate to the webdriveruniversity homepage",
             "match": {
-              "location": "src\\step-definitions\\Homepage_Steps.ts:8"
+              "location": "src\\step-definitions\\Homepage_Steps.ts:7"
             },
             "result": {
               "status": "passed",
-              "duration": 2269210900
+              "duration": 2312253000
             }
           },
           {
@@ -36,11 +36,11 @@
             "line": 5,
             "name": "I click on the contact us button",
             "match": {
-              "location": "src\\step-definitions\\Homepage_Steps.ts:13"
+              "location": "src\\step-definitions\\Homepage_Steps.ts:18"
             },
             "result": {
               "status": "passed",
-              "duration": 148427400
+              "duration": 165794499
             }
           },
           {
@@ -49,11 +49,11 @@
             "line": 6,
             "name": "I switch to the new browser tab",
             "match": {
-              "location": "src\\step-definitions\\Base_Steps.ts:4"
+              "location": "src\\step-definitions\\Base_Steps.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 280960000
+              "duration": 288484499
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 454453499
+              "duration": 413650099
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 50966099
+              "duration": 57215900
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 631442399
+              "duration": 649131900
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 901613799
+              "duration": 908017100
             }
           },
           {
@@ -113,13 +113,13 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 423914200
+              "duration": 439343999
             }
           }
         ],
         "tags": [
           {
-            "name": "@ContactUs",
+            "name": "@contactPage",
             "line": 1
           },
           {
@@ -145,7 +145,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 510073199
+              "duration": 552637700
             }
           },
           {
@@ -154,11 +154,11 @@
             "line": 4,
             "name": "I navigate to the webdriveruniversity homepage",
             "match": {
-              "location": "src\\step-definitions\\Homepage_Steps.ts:8"
+              "location": "src\\step-definitions\\Homepage_Steps.ts:7"
             },
             "result": {
               "status": "passed",
-              "duration": 2282315999
+              "duration": 2289281800
             }
           },
           {
@@ -167,11 +167,11 @@
             "line": 5,
             "name": "I click on the contact us button",
             "match": {
-              "location": "src\\step-definitions\\Homepage_Steps.ts:13"
+              "location": "src\\step-definitions\\Homepage_Steps.ts:18"
             },
             "result": {
               "status": "passed",
-              "duration": 128041700
+              "duration": 117571899
             }
           },
           {
@@ -180,11 +180,11 @@
             "line": 6,
             "name": "I switch to the new browser tab",
             "match": {
-              "location": "src\\step-definitions\\Base_Steps.ts:4"
+              "location": "src\\step-definitions\\Base_Steps.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 276846599
+              "duration": 290968199
             }
           },
           {
@@ -197,7 +197,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 435525200
+              "duration": 422507799
             }
           },
           {
@@ -210,7 +210,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 48456900
+              "duration": 49948300
             }
           },
           {
@@ -223,7 +223,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 637014100
+              "duration": 631666799
             }
           },
           {
@@ -236,7 +236,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 911324199
+              "duration": 910898799
             }
           },
           {
@@ -244,13 +244,13 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 348614600
+              "duration": 422370999
             }
           }
         ],
         "tags": [
           {
-            "name": "@ContactUs",
+            "name": "@contactPage",
             "line": 1
           },
           {
@@ -276,7 +276,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 492893299
+              "duration": 493924999
             }
           },
           {
@@ -285,11 +285,11 @@
             "line": 4,
             "name": "I navigate to the webdriveruniversity homepage",
             "match": {
-              "location": "src\\step-definitions\\Homepage_Steps.ts:8"
+              "location": "src\\step-definitions\\Homepage_Steps.ts:7"
             },
             "result": {
               "status": "passed",
-              "duration": 2291077300
+              "duration": 2277761499
             }
           },
           {
@@ -298,11 +298,11 @@
             "line": 5,
             "name": "I click on the contact us button",
             "match": {
-              "location": "src\\step-definitions\\Homepage_Steps.ts:13"
+              "location": "src\\step-definitions\\Homepage_Steps.ts:18"
             },
             "result": {
               "status": "passed",
-              "duration": 121174900
+              "duration": 127092000
             }
           },
           {
@@ -311,11 +311,11 @@
             "line": 6,
             "name": "I switch to the new browser tab",
             "match": {
-              "location": "src\\step-definitions\\Base_Steps.ts:4"
+              "location": "src\\step-definitions\\Base_Steps.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 271297699
+              "duration": 286480199
             }
           },
           {
@@ -328,7 +328,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 426873800
+              "duration": 420050500
             }
           },
           {
@@ -341,7 +341,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 50306000
+              "duration": 51164600
             }
           },
           {
@@ -354,7 +354,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 363607199
+              "duration": 364494600
             }
           },
           {
@@ -367,7 +367,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 56994399
+              "duration": 59016299
             }
           },
           {
@@ -375,13 +375,13 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 370915600
+              "duration": 372532800
             }
           }
         ],
         "tags": [
           {
-            "name": "@ContactUs",
+            "name": "@contactPage",
             "line": 1
           },
           {
@@ -402,7 +402,7 @@
     "name": "WebdriverUniversity.com - Contact Us Page",
     "tags": [
       {
-        "name": "@ContactUs",
+        "name": "@contactPage",
         "line": 1
       },
       {
@@ -427,7 +427,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 527538700
+              "duration": 513916600
             }
           },
           {
@@ -436,24 +436,24 @@
             "line": 4,
             "name": "I navigate to the webdriveruniversity homepage",
             "match": {
-              "location": "src\\step-definitions\\Homepage_Steps.ts:8"
+              "location": "src\\step-definitions\\Homepage_Steps.ts:7"
             },
             "result": {
               "status": "passed",
-              "duration": 2302908799
+              "duration": 2288077400
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 5,
-            "name": "I click on the login portal",
+            "name": "I click on the login portal button",
             "match": {
-              "location": "src\\step-definitions\\Homepage_Steps.ts:19"
+              "location": "src\\step-definitions\\Homepage_Steps.ts:24"
             },
             "result": {
               "status": "passed",
-              "duration": 130327399
+              "duration": 124003399
             }
           },
           {
@@ -462,11 +462,11 @@
             "line": 6,
             "name": "I switch to the new browser tab",
             "match": {
-              "location": "src\\step-definitions\\Base_Steps.ts:4"
+              "location": "src\\step-definitions\\Base_Steps.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 280726299
+              "duration": 283827499
             }
           },
           {
@@ -479,7 +479,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 408586900
+              "duration": 391963800
             }
           },
           {
@@ -492,7 +492,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 22707399
+              "duration": 21478699
             }
           },
           {
@@ -505,7 +505,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 352084699
+              "duration": 352577999
             }
           },
           {
@@ -518,7 +518,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2091500
+              "duration": 1698499
             }
           },
           {
@@ -526,7 +526,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 380580999
+              "duration": 422430300
             }
           }
         ],
@@ -558,7 +558,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 490510999
+              "duration": 520656300
             }
           },
           {
@@ -567,24 +567,24 @@
             "line": 4,
             "name": "I navigate to the webdriveruniversity homepage",
             "match": {
-              "location": "src\\step-definitions\\Homepage_Steps.ts:8"
+              "location": "src\\step-definitions\\Homepage_Steps.ts:7"
             },
             "result": {
               "status": "passed",
-              "duration": 2477027799
+              "duration": 3406475999
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 5,
-            "name": "I click on the login portal",
+            "name": "I click on the login portal button",
             "match": {
-              "location": "src\\step-definitions\\Homepage_Steps.ts:19"
+              "location": "src\\step-definitions\\Homepage_Steps.ts:24"
             },
             "result": {
               "status": "passed",
-              "duration": 168957900
+              "duration": 130833500
             }
           },
           {
@@ -593,11 +593,11 @@
             "line": 6,
             "name": "I switch to the new browser tab",
             "match": {
-              "location": "src\\step-definitions\\Base_Steps.ts:4"
+              "location": "src\\step-definitions\\Base_Steps.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 306384799
+              "duration": 285668099
             }
           },
           {
@@ -610,7 +610,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 419551500
+              "duration": 407844600
             }
           },
           {
@@ -623,7 +623,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 23515299
+              "duration": 35473500
             }
           },
           {
@@ -636,7 +636,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 393896299
+              "duration": 347194900
             }
           },
           {
@@ -649,7 +649,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1266900
+              "duration": 997800
             }
           },
           {
@@ -657,7 +657,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 380291399
+              "duration": 421220799
             }
           }
         ],
@@ -689,7 +689,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 499615300
+              "duration": 508707099
             }
           },
           {
@@ -698,24 +698,24 @@
             "line": 4,
             "name": "I navigate to the webdriveruniversity homepage",
             "match": {
-              "location": "src\\step-definitions\\Homepage_Steps.ts:8"
+              "location": "src\\step-definitions\\Homepage_Steps.ts:7"
             },
             "result": {
               "status": "passed",
-              "duration": 2473261099
+              "duration": 2272594499
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 5,
-            "name": "I click on the login portal",
+            "name": "I click on the login portal button",
             "match": {
-              "location": "src\\step-definitions\\Homepage_Steps.ts:19"
+              "location": "src\\step-definitions\\Homepage_Steps.ts:24"
             },
             "result": {
               "status": "passed",
-              "duration": 125071300
+              "duration": 131238499
             }
           },
           {
@@ -724,11 +724,11 @@
             "line": 6,
             "name": "I switch to the new browser tab",
             "match": {
-              "location": "src\\step-definitions\\Base_Steps.ts:4"
+              "location": "src\\step-definitions\\Base_Steps.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 279625500
+              "duration": 285973999
             }
           },
           {
@@ -741,7 +741,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 399947199
+              "duration": 354004200
             }
           },
           {
@@ -754,7 +754,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 20151000
+              "duration": 69459000
             }
           },
           {
@@ -767,7 +767,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 365015599
+              "duration": 343357599
             }
           },
           {
@@ -780,7 +780,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1137599
+              "duration": 1498899
             }
           },
           {
@@ -788,7 +788,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 398247499
+              "duration": 542901700
             }
           }
         ],

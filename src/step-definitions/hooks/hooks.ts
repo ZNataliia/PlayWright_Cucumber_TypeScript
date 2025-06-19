@@ -7,7 +7,6 @@ import { config as loadEnv } from "dotenv"
 const env = loadEnv({ path: './env/.env' });
 
 //Create a configuration object for easy access to env variables
-// if .env variables are not set, use default values
 const config = {
     headless: env.parsed?.HEADLESS === 'true',
     browser: env.parsed?.UI_AUTOMATION_BROWSER || 'chromium',
@@ -80,6 +79,9 @@ After(async function ({ pickle, result }) {
             console.error('pageFixture.page is undefined');
         }
     }
-    await pageFixture.page.close();
-    await browser.close();
+
+    if(browserInstance) {
+        await pageFixture.page?.close();
+        await browserInstance.close();
+    }
 })

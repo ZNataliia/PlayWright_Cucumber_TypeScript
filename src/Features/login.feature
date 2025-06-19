@@ -2,7 +2,7 @@
 Feature: WebdriverUniversity.com - Login Page
     Background: Navigation to login page
         Given I navigate to the webdriveruniversity homepage
-        When I click on the login portal
+        When I click on the login portal button
         And I switch to the new browser tab
 
     Scenario Outline: Validation login Form Submission
