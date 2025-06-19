@@ -1,3 +1,4 @@
+@regression @login
 Feature: WebdriverUniversity.com - Login Page
     Background: Navigation to login page
         Given I navigate to the webdriveruniversity homepage
@@ -9,7 +10,7 @@ Feature: WebdriverUniversity.com - Login Page
         And I fill password field with "<password>"
         And I click on the login button
         Then I should be presented with a "<message>" message
-
+        @smoke
         Examples:
             | login     | password     | message              |
             | webdriver | webdriver123 | validation succeeded |
