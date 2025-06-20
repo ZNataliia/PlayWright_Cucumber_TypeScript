@@ -2,6 +2,7 @@ import { Given, When, Then } from "@cucumber/cucumber";
 import { pageFixture } from "./hooks/browserContextFixture";
 import { expect } from "@playwright/test";
 import { faker } from '@faker-js/faker';
+import { CucumberWorld } from "./world/CucumberWorld";
 
 
 
@@ -72,20 +73,26 @@ When('I type specific text {string} and a number {int} within the comment input 
 
 //random data
 
-When('I type a random first name', async () => {
+When('I type a random first name', async function (this: CucumberWorld) {
+    const randomFirstName = faker.person.firstName(); // Generate a random first name
+    this.setFirstName(randomFirstName); // Set the first name in the world object
     const firstName_Input = pageFixture.page.getByRole('textbox', { name: 'First Name' })
-    await firstName_Input.fill(faker.person.firstName());
+    await firstName_Input.fill(randomFirstName);
 });
 
 
-When('I type a random last name', async () => {
+When('I type a random last name', async function (this: CucumberWorld) {
+    const randomLastName = faker.person.lastName(); // Generate a random last name
+    this.setLastName(randomLastName); // Set the last name in the world object
     const lastName_Input = await pageFixture.page.getByRole('textbox', { name: 'Last Name' })
-    await lastName_Input.fill(faker.person.lastName());
+    await lastName_Input.fill(randomLastName);
 });
 
-When('I enter a random email address', async () => {
+When('I enter a random email address', async function (this: CucumberWorld) {
+    const randomEmail = faker.internet.email(); // Generate a random email address
+    this.setEmailAddress(randomEmail); // Set the email address in the world object
     const email_Input = await pageFixture.page.getByRole('textbox', { name: 'email' })
-    await email_Input.fill(faker.internet.email());
+    await email_Input.fill(randomEmail);
 });
 
 When('I type a random comment', async () => {
