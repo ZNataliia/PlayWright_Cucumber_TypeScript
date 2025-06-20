@@ -4,605 +4,6 @@
     "elements": [
       {
         "description": "",
-        "id": "webdriveruniversity.com---contact-us-page;valid-contact-us-form-submission",
-        "keyword": "Scenario",
-        "line": 8,
-        "name": "Valid Contact Us Form Submission",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 464541099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "I navigate to the webdriveruniversity homepage",
-            "match": {
-              "location": "src\\step-definitions\\Homepage_Steps.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5103874799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "I click on the contact us button",
-            "match": {
-              "location": "src\\step-definitions\\Homepage_Steps.ts:18"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 169984700
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 6,
-            "name": "I switch to the new browser tab",
-            "match": {
-              "location": "src\\step-definitions\\Base_Steps.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 265117700
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "I type a first name",
-            "match": {
-              "location": "src\\step-definitions\\Contact_Us_Steps.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 412416499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "I type a last name",
-            "match": {
-              "location": "src\\step-definitions\\Contact_Us_Steps.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 14849299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "I enter an email address",
-            "match": {
-              "location": "src\\step-definitions\\Contact_Us_Steps.ts:19"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 14228999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "I type a comment",
-            "match": {
-              "location": "src\\step-definitions\\Contact_Us_Steps.ts:24"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 14482099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 13,
-            "name": "I click on the submit button",
-            "match": {
-              "location": "src\\step-definitions\\Contact_Us_Steps.ts:29"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 654788599
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "I should be presented with a successful contact us submission message",
-            "match": {
-              "location": "src\\step-definitions\\Contact_Us_Steps.ts:34"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 897639499
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 99643100
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@contactPage",
-            "line": 1
-          },
-          {
-            "name": "@regression",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "webdriveruniversity.com---contact-us-page;invalid-contact-us-form-submission",
-        "keyword": "Scenario",
-        "line": 17,
-        "name": "Invalid Contact Us Form Submission",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 197185400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "I navigate to the webdriveruniversity homepage",
-            "match": {
-              "location": "src\\step-definitions\\Homepage_Steps.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2248117700
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "I click on the contact us button",
-            "match": {
-              "location": "src\\step-definitions\\Homepage_Steps.ts:18"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 74953799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 6,
-            "name": "I switch to the new browser tab",
-            "match": {
-              "location": "src\\step-definitions\\Base_Steps.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 268977499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 18,
-            "name": "I type a first name",
-            "match": {
-              "location": "src\\step-definitions\\Contact_Us_Steps.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 385982099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 19,
-            "name": "I type a last name",
-            "match": {
-              "location": "src\\step-definitions\\Contact_Us_Steps.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 11710000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 20,
-            "name": "I type a comment",
-            "match": {
-              "location": "src\\step-definitions\\Contact_Us_Steps.ts:24"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 14023300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 21,
-            "name": "I click on the submit button",
-            "match": {
-              "location": "src\\step-definitions\\Contact_Us_Steps.ts:29"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 377636900
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 22,
-            "name": "I should be presented with a unsuccessful contact us message",
-            "match": {
-              "location": "src\\step-definitions\\Contact_Us_Steps.ts:41"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 18169099
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 73356700
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@contactPage",
-            "line": 1
-          },
-          {
-            "name": "@regression",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "webdriveruniversity.com---contact-us-page;valid-contact-us-form-submission---using-specific-data",
-        "keyword": "Scenario",
-        "line": 25,
-        "name": "Valid Contact Us Form Submission - Using Specific Data",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 187712299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "I navigate to the webdriveruniversity homepage",
-            "match": {
-              "location": "src\\step-definitions\\Homepage_Steps.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2255674800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "I click on the contact us button",
-            "match": {
-              "location": "src\\step-definitions\\Homepage_Steps.ts:18"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 68776299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 6,
-            "name": "I switch to the new browser tab",
-            "match": {
-              "location": "src\\step-definitions\\Base_Steps.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 274471699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 26,
-            "name": "I type a specific first name \"Sarah\"",
-            "match": {
-              "location": "src\\step-definitions\\Contact_Us_Steps.ts:52"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 384260300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 27,
-            "name": "I type a specific last name \"Woods\"",
-            "match": {
-              "location": "src\\step-definitions\\Contact_Us_Steps.ts:58"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 12788300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 28,
-            "name": "I enter a specific email address \"sarah_woods@example.com\"",
-            "match": {
-              "location": "src\\step-definitions\\Contact_Us_Steps.ts:63"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 14716700
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 29,
-            "name": "I type specific text \"Hello world\" and a number 2 within the comment input field",
-            "match": {
-              "location": "src\\step-definitions\\Contact_Us_Steps.ts:68"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 13489699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 30,
-            "name": "I click on the submit button",
-            "match": {
-              "location": "src\\step-definitions\\Contact_Us_Steps.ts:29"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 650050699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 31,
-            "name": "I should be presented with a successful contact us submission message",
-            "match": {
-              "location": "src\\step-definitions\\Contact_Us_Steps.ts:34"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 887904299
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 78458299
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@contactPage",
-            "line": 1
-          },
-          {
-            "name": "@regression",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "webdriveruniversity.com---contact-us-page;contact-us-form-submission---using-random-data",
-        "keyword": "Scenario",
-        "line": 34,
-        "name": "Contact Us Form Submission - Using Random Data",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 210801699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "I navigate to the webdriveruniversity homepage",
-            "match": {
-              "location": "src\\step-definitions\\Homepage_Steps.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2584368900
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "I click on the contact us button",
-            "match": {
-              "location": "src\\step-definitions\\Homepage_Steps.ts:18"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 69574700
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 6,
-            "name": "I switch to the new browser tab",
-            "match": {
-              "location": "src\\step-definitions\\Base_Steps.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 298586599
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 35,
-            "name": "I type a random first name",
-            "match": {
-              "location": "src\\step-definitions\\Contact_Us_Steps.ts:75"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 412664600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 36,
-            "name": "I type a random last name",
-            "match": {
-              "location": "src\\step-definitions\\Contact_Us_Steps.ts:81"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 13679599
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 37,
-            "name": "I enter a random email address",
-            "match": {
-              "location": "src\\step-definitions\\Contact_Us_Steps.ts:86"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 12394599
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 38,
-            "name": "I type a comment",
-            "match": {
-              "location": "src\\step-definitions\\Contact_Us_Steps.ts:24"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 10685399
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 39,
-            "name": "I click on the submit button",
-            "match": {
-              "location": "src\\step-definitions\\Contact_Us_Steps.ts:29"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 699452000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 40,
-            "name": "I should be presented with a successful contact us submission message",
-            "match": {
-              "location": "src\\step-definitions\\Contact_Us_Steps.ts:34"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 858029600
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 73004699
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@contactPage",
-            "line": 1
-          },
-          {
-            "name": "@regression",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
         "id": "webdriveruniversity.com---contact-us-page;validate-contact-us-page",
         "keyword": "Scenario Outline",
         "line": 51,
@@ -613,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 180388999
+              "duration": 1937793000
             }
           },
           {
@@ -626,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2678650699
+              "duration": 4999533499
             }
           },
           {
@@ -639,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 72828799
+              "duration": 108985499
             }
           },
           {
@@ -652,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 605496299
+              "duration": 270897100
             }
           },
           {
@@ -665,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 409543100
+              "duration": 430400500
             }
           },
           {
@@ -678,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 27614400
+              "duration": 27646400
             }
           },
           {
@@ -691,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 688755100
+              "duration": 649288899
             }
           },
           {
@@ -704,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 914987500
+              "duration": 905928200
             }
           },
           {
@@ -712,7 +113,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 62888400
+              "duration": 87895000
             }
           }
         ],
@@ -744,7 +145,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 176037100
+              "duration": 184067999
             }
           },
           {
@@ -757,7 +158,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2225062599
+              "duration": 2283392500
             }
           },
           {
@@ -770,7 +171,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 74376599
+              "duration": 102551999
             }
           },
           {
@@ -783,7 +184,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 267392299
+              "duration": 272376100
             }
           },
           {
@@ -796,7 +197,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 381688800
+              "duration": 386390800
             }
           },
           {
@@ -809,7 +210,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 30392599
+              "duration": 27330900
             }
           },
           {
@@ -822,7 +223,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 635718500
+              "duration": 634505400
             }
           },
           {
@@ -835,7 +236,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 879902499
+              "duration": 872415399
             }
           },
           {
@@ -843,7 +244,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 70384700
+              "duration": 63940099
             }
           }
         ],
@@ -875,7 +276,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 184950700
+              "duration": 177858100
             }
           },
           {
@@ -888,7 +289,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2434544999
+              "duration": 2248569600
             }
           },
           {
@@ -901,7 +302,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 76426100
+              "duration": 94589400
             }
           },
           {
@@ -914,7 +315,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 574576699
+              "duration": 265496699
             }
           },
           {
@@ -927,7 +328,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 897962699
+              "duration": 383446599
             }
           },
           {
@@ -940,7 +341,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 26945200
+              "duration": 25250199
             }
           },
           {
@@ -953,7 +354,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 376146799
+              "duration": 361453100
             }
           },
           {
@@ -966,7 +367,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 47042499
+              "duration": 44533599
             }
           },
           {
@@ -974,7 +375,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 75421800
+              "duration": 69403100
             }
           }
         ],
@@ -1026,7 +427,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 184586100
+              "duration": 179023300
             }
           },
           {
@@ -1039,7 +440,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2214833699
+              "duration": 2225125899
             }
           },
           {
@@ -1052,7 +453,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 116775699
+              "duration": 78544699
             }
           },
           {
@@ -1065,7 +466,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 267017299
+              "duration": 262560000
             }
           },
           {
@@ -1078,7 +479,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 378144699
+              "duration": 363383399
             }
           },
           {
@@ -1091,7 +492,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15560899
+              "duration": 13543900
             }
           },
           {
@@ -1104,7 +505,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 335421699
+              "duration": 338737399
             }
           },
           {
@@ -1117,7 +518,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1613099
+              "duration": 1811599
             }
           },
           {
@@ -1125,7 +526,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 80077900
+              "duration": 70990200
             }
           }
         ],
@@ -1157,7 +558,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 187522799
+              "duration": 185729100
             }
           },
           {
@@ -1170,7 +571,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2229642699
+              "duration": 2241026099
             }
           },
           {
@@ -1183,7 +584,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 101805699
+              "duration": 68777999
             }
           },
           {
@@ -1196,7 +597,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 268112900
+              "duration": 262804300
             }
           },
           {
@@ -1209,7 +610,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 379798599
+              "duration": 358235400
             }
           },
           {
@@ -1222,7 +623,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12191700
+              "duration": 12627599
             }
           },
           {
@@ -1235,7 +636,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 325136299
+              "duration": 328855500
             }
           },
           {
@@ -1248,7 +649,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1010600
+              "duration": 1490300
             }
           },
           {
@@ -1256,7 +657,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 64501199
+              "duration": 96172900
             }
           }
         ],
@@ -1288,7 +689,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 207634600
+              "duration": 181950600
             }
           },
           {
@@ -1301,7 +702,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2315161099
+              "duration": 2312974099
             }
           },
           {
@@ -1314,7 +715,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 73673599
+              "duration": 73938200
             }
           },
           {
@@ -1327,7 +728,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 268365899
+              "duration": 263731099
             }
           },
           {
@@ -1340,7 +741,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 383964899
+              "duration": 360994599
             }
           },
           {
@@ -1353,7 +754,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11835800
+              "duration": 11467799
             }
           },
           {
@@ -1366,7 +767,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 335393900
+              "duration": 328510499
             }
           },
           {
@@ -1379,7 +780,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1033499
+              "duration": 826300
             }
           },
           {
@@ -1387,7 +788,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 62629899
+              "duration": 67209500
             }
           }
         ],

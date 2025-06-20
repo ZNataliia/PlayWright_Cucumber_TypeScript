@@ -1,4 +1,9 @@
 import { exec } from "child_process";
+import dotenv from 'dotenv';
+dotenv.config({ path: './env/.env'});
+
+// Setting retry value from environment variables or defaulting to '0'
+const retryValue = process.env.RETRY || '0';
 
 //Define a common command string for running cucumber tests
 const common = `./src/features/*.feature \
@@ -7,7 +12,7 @@ const common = `./src/features/*.feature \
   --require ./src/utils/cucumber-timeout.ts \
   -f json:./reports/report.json \
   --format html:./reports/report.html \
-  --format junit:./reports/test-results.xml \
+  --retry ${retryValue} \
   --tags "not @ignore"`;
 
 //Define an interface for the profiles object
@@ -21,7 +26,7 @@ const profiles: ProfileCommands = {
     smoke: `${common} --tags "@smoke"`,
     regression: `${common} --tags "@regression"`,
     login: `${common} --tags "@login"`,
-    contactUs: `${common} --tags "@contactPage"`,
+    contactUs: `${common} --tags "@contact-us"`,
 }
 
 //Get the third command-line argument and assign it to the profile
